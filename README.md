@@ -56,6 +56,8 @@ mkdir tf
 virtualenv --system-site-packages -p python3 ~/tf
 source ~/tf/bin/activate
 easy_install -U pip
+pip3 install --upgrade tensorflow-gpu
+pip3 install opencv-python
 
 
 
