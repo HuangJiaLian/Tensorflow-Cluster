@@ -1,12 +1,14 @@
 # Tensorflow-Cluster
+
 Tensorflow Cluster 环境搭建
-安装xubuntu-desktop
+
+### 安装xubuntu-desktop
 
 ```
 sudo apt-get install xubuntu-desktop
 ```
 
-创建新用户
+### 创建新用户
 
 ```
 adduser dell01
@@ -14,10 +16,12 @@ usermod -aG sudo dell01
 su - dell01
 ```
 
-ibus拼音输入法你好，显示你哈
+### ibus拼音输入法你好，显示你哈
+
 - 面板右键首选项选择双拼，重启，选全拼，再重启
 
-代理
+### 代理
+
 ```
 sudo apt install python-pip python-setuptools
 sudo pip install shadowsocks 
@@ -28,10 +32,10 @@ chrome 安装switchomega: github.com/FelisCatus/SwitchyOmega/releases
 chrome://extensions
 ```
 
-chrome网页版微信
+### chrome网页版微信
 
+### 安装 Cuda 9.0 
 
-Install Cuda 9.0 
 ```
 sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb
 sudo apt-key add /var/cuda-repo-9-0-local/7fa2af80.pub
@@ -48,7 +52,9 @@ Double Click libcudnn7_7.1.3.16-1+cuda9.0_amd64.deb to install
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
 
-install anocaonda 
+提示：这三个export最好要写入到.bashrc里面去。
+
+### 安装 anocaonda 
 
 sudo apt-get install python3-pip python3-dev python-virtualenv
 cd ~
@@ -61,4 +67,7 @@ pip3 install opencv-python
 
 
 
+待做事项：
 
+- [ ] Tensorflow Distrubuted
+- [ ] 安装词典dict
