@@ -65,6 +65,10 @@ easy_install -U pip
 pip3 install --upgrade tensorflow-gpu
 pip3 install opencv-python
 
+### 开启 ssh 服务，便于其他机器连接到该电脑
+sudo apt-get install openssh-server
+sudo ps -e |grep ssh 
+sudo service ssh start
 
 
 待做事项：
@@ -72,3 +76,4 @@ pip3 install opencv-python
 - [ ] Tensorflow Distrubuted
 - [ ] 安装词典dict
 - [x] 安装Pycharm
+- [x] 启动ssh服务
