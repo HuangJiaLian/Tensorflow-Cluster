@@ -71,3 +71,4 @@ pip3 install opencv-python
 
 - [ ] Tensorflow Distrubuted
 - [ ] 安装词典dict
+- [x] 安装Pycharm
